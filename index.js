@@ -10,7 +10,7 @@ app.use(express.json({ limit: "10mb" }));
 app.use(
   cors({
     credentials: true,
-    origin: "https://todo-app-frontend-silk.vercel.app/"
+    origin: "https://todo-app-frontend-silk.vercel.app"
   
   })
 );
