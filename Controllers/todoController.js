@@ -7,7 +7,7 @@ const addTodo = async (req,res) => {
         const {title,description,date} = req.body;
         const owner = req._id;
         
-        if(!title,!description,!date){
+        if(!title || !description){
             return res.send(error(400,"All Fields Are Required"));
         }
 
