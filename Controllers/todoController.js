@@ -8,7 +8,7 @@ const addTodo = async (req,res) => {
         const owner = req._id;
         
         if(!title || !description){
-            return res.send(error(400,"All Fields Are Required"));
+            return res.send(error(400,"Title And Desc Required"));
         }
 
         const todo = await Todo.create({
